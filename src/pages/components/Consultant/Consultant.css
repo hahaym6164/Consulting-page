@@ -1,0 +1,54 @@
+.photo > img {
+  width: 100%;
+  border-radius: 100%;
+}
+.photo {
+  width: 50%;
+}
+.photo-intro {
+  display: flex;
+  transform: translateX(30px);
+  opacity: 0;
+  transition: all 1s;
+}
+.intro > ul > li {
+  text-align: left;
+}
+
+.consultant {
+  background: var(--white);
+  box-shadow: 2px 3px 10px #999;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sec-div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  transform: translateX(30px);
+  opacity: 0;
+  transition: all 1s;
+}
+.focus-on {
+  color: var(--white);
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid var(--purple);
+  box-shadow: 2px 3px 10px #999;
+  background: linear-gradient(0deg, var(--purple) 0%, var(--blue) 100%);
+}
+.intersecting {
+  transform: unset;
+  opacity: 1;
+}
+.third-div {
+  margin: 20px 0;
+}
+.small-btn {
+  font-size: 16px;
+  border-radius: 30px !important;
+}
