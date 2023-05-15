@@ -1,0 +1,38 @@
+.about {
+  margin: 0 -10px;
+  padding: 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  /* background-color: var(--white); */
+}
+.about > div {
+  background-color: #dcf7f0;
+  color: var(--grey);
+}
+.icon {
+  background: #24cfa3;
+  color: var(--white);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-desc {
+  gap: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h3 {
+  margin: 0;
+}

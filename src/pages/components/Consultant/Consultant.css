@@ -35,11 +35,13 @@
 }
 .focus-on {
   color: var(--white);
+  font-size: 14px;
+
   border-radius: 5px;
   padding: 10px;
-  border: 1px solid var(--purple);
+  border: 1px solid var(--primary);
   box-shadow: 2px 3px 10px #999;
-  background: linear-gradient(0deg, var(--purple) 0%, var(--blue) 100%);
+  background: linear-gradient(0deg, var(--primary) 0%, var(--blue) 100%);
 }
 .intersecting {
   transform: unset;

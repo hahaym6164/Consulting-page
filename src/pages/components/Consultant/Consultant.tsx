@@ -1,9 +1,16 @@
 import React, { useEffect, useRef } from "react";
-import Pic from "../../../assets/pictures/man.jpeg";
+import Woman from "../../../assets/pictures/woman.jpg";
 import "./Consultant.css";
 import { Button } from "@mui/material";
 import ReadMoreBtn from "./ReadMoreBtn";
-function Consultant() {
+import Home from "../../Home";
+
+interface ConsultantProps{
+    btnClick: Function
+}
+
+function Consultant(props: ConsultantProps) {
+    const {btnClick} = props
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -17,6 +24,9 @@ function Consultant() {
   const ref = useRef(null);
   const ref1 = useRef(null);
   const refs = [ref, ref1];
+  const handleClick = () =>{
+    btnClick()
+  }
   useEffect(() => {
     refs.forEach((i) => {
       if (i.current) {
@@ -29,10 +39,10 @@ function Consultant() {
     <div className="consultant">
       <div className="photo-intro" ref={ref1}>
         <div className="photo">
-          <img src={Pic} alt="" />
+          <img src={Woman} alt="" />
         </div>
         <div className="intro">
-          <h3>John Smith</h3>
+          <h3>Maggie Ye</h3>
           <ul>
             <li>职业时间： 30年</li>
             <li>执照： CCC (加拿大注册心理咨询师）</li>
@@ -51,7 +61,7 @@ function Consultant() {
         ></ReadMoreBtn>
       </div>
       <div className="forth-div">
-        <Button className="small-btn" variant="contained">
+        <Button onClick={handleClick} className="small-btn" variant="contained">
           立即咨询
         </Button>
       </div>
